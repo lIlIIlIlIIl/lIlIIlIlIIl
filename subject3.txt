@@ -1,1 +1,25 @@
-subject3
+import random
+
+com = random.randint(1,3)
+user = int(input("1.가위 , 2.바위. 3.보>"))
+
+if com == user:
+    print("무승부")
+elif com == 1:
+    if user == 2:
+        print("유저 승")
+    else:
+        print("컴터 승")
+elif com == 2:
+    if user == 1:
+        print("컴터 승")
+    else:
+        print("유저 승")
+else:
+    if user == 1:
+        print("유저 승")
+    else:
+        print("컴터 승")
+
+
+
